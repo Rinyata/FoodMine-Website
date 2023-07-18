@@ -1,0 +1,13 @@
+<div style="display: flex;" style="color: pink;" class="searchbar">
+    <div style="justify-content: center;" class="kalp" routerLink="/fav-page" >
+        ❤
+    </div>
+    <div style="justify-content: center;" class="search">
+        <input type="text" placeholder="Search Food Mine!" [(ngModel)]="searchTerm" (change)="search()"> <!--//burdaki change entera basıldığında arama yapmasını sağlıyor.-->
+        <button (click)="search()" >Search</button>
+    </div>
+
+</div>
+
+
+

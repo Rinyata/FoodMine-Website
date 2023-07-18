@@ -1,0 +1,15 @@
+<div>
+    <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">
+        {{tag.name}}({{tag.count}})
+    </a>
+</div>
+<div>
+    <a *ngFor="let imdat of origins" routerLink="/origin/{{imdat.origin}}">
+        <div class="{{imdat.icon}}"></div>
+    </a>
+</div>
+<div>
+    <a *ngFor="let tagName of foodPageTags" routerLink="/tag/{{tagName}}">
+        {{tagName}}
+    </a>
+</div>
